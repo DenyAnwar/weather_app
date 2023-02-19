@@ -96,20 +96,21 @@ function getCityWeather(url) {
     })
 }
 
+// change APPID, with you ID API from open weather
 function getWeatherByCoordinates(latitude, longitude) {
-  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=b77340146fae68893e1f56b08d3190e9&units=metric`);
+  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=''&units=metric`);
 }
 
 function getForecastByCoordinates(latitude, longitude) {
-  getForecast(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&APPID=b77340146fae68893e1f56b08d3190e9&units=metric`);
+  getForecast(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&APPID=''&units=metric`);
 }
 
 function getWeatherByCity(city) {
-  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=b77340146fae68893e1f56b08d3190e9&units=metric`);
+  getCityWeather(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=''&units=metric`);
 }
 
 function getForecastByCity(city) {
-  getForecast(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=b77340146fae68893e1f56b08d3190e9&units=metric`);
+  getForecast(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=''&units=metric`);
 }
 
 function geoSuccess(position) {
