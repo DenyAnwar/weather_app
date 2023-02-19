@@ -95,7 +95,7 @@ input {
 .weather__summary {
   margin-top: 3rem;
 }
-.weather_summary .weather-icon {
+.weather__summary .weather-icon {
   font-size: 3rem;
   margin-right: 1.4rem;
 }
@@ -106,10 +106,15 @@ input {
   font-size: 8rem;
   vertical-align: middle;
 }
+.weather__miscellaneous {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
 .weather__miscellaneous li:first-child {
   margin-right: 2rem;
 }
-
 .weather__miscellaneous span {
   color: #132522;
   margin-left: 1rem;
@@ -130,16 +135,16 @@ input {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.forcast__day {
+.forecast__day {
   background: #4a9a8f;
   text-align: center;
   margin-bottom: .8rem;
   flex: 1 0 100%;
 }
-.forcast__date {
+.forecast__date {
   font-size: 1.3rem;
 }
-.forcast__icon {
+.forecast__icon {
   font-size: 3.7rem;
 }
 .forecast__temp {
@@ -147,7 +152,7 @@ input {
 }
 
 @media screen and (min-width: 600px) {
-  .forcast__day {
+  .forecast__day {
     margin-right: 1rem;
     flex: 1 1 15%;
   }
